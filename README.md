@@ -11,4 +11,5 @@
 - QRunInfo: 一些系统的信息获取和判断操作的封装；    [QRunInfo](QRunInfo)
 - qt-solutions: 一些Qt官方提供的三方库的合集；    [qt-solutions](qt-solutions)
     - qtpropertybrowser：属性编辑浏览器，类似于qtdesigner中右侧的属性界面；    [qtpropertybrowser](qt-solutions/qtpropertybrowser)  
-    - qtsingleapplication：只允许应用有一个实例；    [qtsingleapplication](qt-solutions/qtsingleapplication)  
+    - qtsingleapplication：只允许应用有一个实例；    [qtsingleapplication](qt-solutions/qtsingleapplication)
+    - qtlockedfile：锁定独占文件，该类提供使用文件的进程之间的锁定；    [qtsingleapplication](qt-solutions/qtlockedfile)  
