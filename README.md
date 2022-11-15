@@ -9,3 +9,6 @@
 - quazip: 为Qt提供了zip/unzip的功能；    [quazip](quazip)
 - DepolyByQmake: 编译完成后对程序执行打包操作（仅限于windows）；    [DepolyByQmake](DeployByQmake)
 - QRunInfo: 一些系统的信息获取和判断操作的封装；    [QRunInfo](QRunInfo)
+- qt-solutions: 一些Qt官方提供的三方库的合集；    [qt-solutions](qt-solutions)
+    - qtpropertybrowser：属性编辑浏览器，类似于qtdesigner中右侧的属性界面；    [qtpropertybrowser](qt-solutions/qtpropertybrowser)  
+    - qtsingleapplication：只允许应用有一个实例；    [qtsingleapplication](qt-solutions/qtsingleapplication)  

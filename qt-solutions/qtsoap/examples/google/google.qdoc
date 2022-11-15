@@ -1,0 +1,47 @@
+// Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+// SPDX-License-Identifier: BSD-3-Clause
+
+/*! \page google-example.html
+
+    \title Using SOAP with the Google API
+
+    This example shows how to use the SOAP component to submit
+    searches via the Google SOAP API.
+
+    Testing this example
+    requires a valid license key, which is available for free
+    from http://api.google.com/.
+
+    \raw HTML
+    <hr>
+    \endraw
+
+    examples/google/google.h:
+
+    \quotefile google.h
+
+    \raw HTML
+    <hr>
+    \endraw
+
+    examples/google/google.cpp:
+
+    \quotefile google.cpp
+
+    \raw HTML
+    <hr>
+    \endraw
+
+    examples/google/main.cpp:
+
+    \quotefile ../google/main.cpp
+
+    \raw HTML
+    <hr>
+    \endraw
+
+    examples/google/google.pro:
+
+    \quotefile google.pro
+
+*/

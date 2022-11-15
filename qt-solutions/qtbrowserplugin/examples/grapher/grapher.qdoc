@@ -1,0 +1,15 @@
+// Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+// SPDX-License-Identifier: BSD-3-Clause
+
+/*! \page qtbrowserplugin-example-grapher.html
+
+  \title Grapher Plugin
+
+  \raw HTML
+  <object type="application/x-graphable" data="http://qt.nokia.com/doc/3.3/graph.g1n" WIDTH=250 HEIGHT=250></object>
+  \endraw
+
+  Implementation:
+ 
+  \quotefile grapher/grapher.cpp
+*/
