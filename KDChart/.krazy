@@ -1,0 +1,26 @@
+CHECKSETS qt5,c++,foss
+
+#KDAB-specific checks
+EXTRA kdabcopyright-reuse,fosslicense-reuse
+
+#exclude checks now being done by clazy or clang-tools
+EXCLUDE includes,strings,explicit,normalize,passbyvalue,operators,nullstrcompare,nullstrassign,doublequote_chars,qobject,sigsandslots,staticobjects,cpp
+#exclude more checks
+EXCLUDE qminmax,captruefalse,dpointer,inline,constref
+#exclude spelling as codespell is much, much better tool
+EXCLUDE spelling
+EXCLUDE style
+
+#skip scripts
+SKIP /scripts/
+#nor examples
+SKIP /examples/
+#if you have a build subdir, skip it
+SKIP /build-
+#skip generated cmake
+SKIP KDChartConfig\.cmake\.in
+#skip other cmake files
+SKIP Doxyfile.cmake
+SKIP \.cmake-format\.py
+#skip the borrowed code in the cmake subdir
+SKIP /cmake/ECM/|/cmake/KDAB/

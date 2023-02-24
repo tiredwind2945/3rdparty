@@ -1,0 +1,5 @@
+#do not report clazy results for these subdirs
+#SKIP whatever
+
+#clazy checks specification
+CHECKS level2

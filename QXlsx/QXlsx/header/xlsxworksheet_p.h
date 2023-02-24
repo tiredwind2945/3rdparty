@@ -57,7 +57,7 @@ struct XlsxSheetFormatProps
 {
     XlsxSheetFormatProps(int baseColWidth = 8,
                          bool customHeight = false,
-                         double defaultColWidth = 0.0,
+                         double defaultColWidth = 8.430f, // https://learn.microsoft.com/en-us/office/troubleshoot/excel/determine-column-widths
                          double defaultRowHeight = 15,
                          quint8 outlineLevelCol = 0,
                          quint8 outlineLevelRow = 0,
@@ -135,10 +135,6 @@ struct XlsxColumnInfo
     bool collapsed;
 };
 
-// #ifndef QMapIntSharedPointerCell
-// typedef QMap<int, QSharedPointer<Cell> > QMapIntSharedPointerCell;
-// #endif
-
 class WorksheetPrivate : public AbstractSheetPrivate
 {
     Q_DECLARE_PUBLIC(Worksheet)
@@ -156,7 +152,7 @@ public:
     void validateDimension();
 
     void saveXmlSheetData(QXmlStreamWriter &writer) const;
-    void saveXmlCellData(QXmlStreamWriter &writer, int row, int col, QSharedPointer<Cell> cell) const;
+    void saveXmlCellData(QXmlStreamWriter &writer, int row, int col, std::shared_ptr<Cell> cell) const;
     void saveXmlMergeCells(QXmlStreamWriter &writer) const;
     void saveXmlHyperlinks(QXmlStreamWriter &writer) const;
     void saveXmlDrawings(QXmlStreamWriter &writer) const;
@@ -181,7 +177,7 @@ public:
     SharedStrings *sharedStrings() const;
 
 public:
-    QMap<int, QMap<int, QSharedPointer<Cell> > > cellTable;
+    QMap<int, QMap<int, std::shared_ptr<Cell> > > cellTable;
 
     QMap<int, QMap<int, QString> > comments;
     QMap<int, QMap<int, QSharedPointer<XlsxHyperlinkData> > > urlTable;
