@@ -8,6 +8,7 @@
 &nbsp;
 ### 文件和多媒体
 - QXlsx：用于在Qt中读写excel表格；    [QXlsx](QXlsx)
+- qt-pdf-viewer：用于在Qt中显示pdf文档；    [qt-pdf-viewer](qt-pdf-viewer)
 - QtAV：基于Qt和FFmpeg的多媒体播放库。它可以帮助您以前所未有的精力编写播放器；    [QtAV](QtAV)
 - quazip：为Qt提供了zip/unzip的功能；    [quazip](quazip)
 
