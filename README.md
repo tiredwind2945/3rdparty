@@ -22,6 +22,7 @@
 
 &nbsp;
 ### 其它
+- qxtglobalshortcut5：提供系统范围内的全局快捷键支持；    [qxtglobalshortcut5](qxtglobalshortcut5)；
 - QSsh：为qt提供SSH和SFTP支持，使你能方便快捷的使用SSH 和SFTP；    [QSsh](QSsh)
 - DepolyByQmake：编译完成后对程序执行打包操作（仅限于windows）；    [DepolyByQmake](DeployByQmake)
 - QRunInfo：一些系统的信息获取和判断操作的封装；    [QRunInfo](QRunInfo)
